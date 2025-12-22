@@ -43,3 +43,11 @@ This rigorous verification process demonstrates my capability to handle data ano
 * **Scrape**: Multi-layered data extraction logic.
 * **Audit**: Forensic verification of data quantity and quality.
 * **Report**: Automated visualization and keyword-based reporting.
+
+---
+
+## ✉️ Contact
+* **Author:** Seoyeon Jeong
+* **LinkedIn:** [https://www.linkedin.com/in/im-seoyeon-jeong/]
+* **Email:** [syn.eoeo@gmail.com]
+
