@@ -19,4 +19,5 @@ Core Libraries: Selenium, BeautifulSoup4, Pandas, Openpyxl
 DevOps: Webdriver-manager for automated driver configuration
 
 🔍 Engineering Challenge: The Quest for Data Integrity
+
 One of the most significant challenges was resolving a 3-review discrepancy in the dataset. By implementing a Real-Sort UI Simulator that forced a "Sort by Latest" action via radio button triggers, I verified that the missing data was not a script error but a platform-side "Soft Delete" issue. This obsessive attention to detail is the core of my data philosophy.
