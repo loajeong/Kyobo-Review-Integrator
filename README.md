@@ -1,6 +1,6 @@
 🚀 Kyobo Review Integrator: A Palantir-Inspired Data Pipeline
-"Quantifying Translation Quality: An End-to-End Pipeline for 'The Technological Republic-Hard Power, Soft Belief, and the Future of the West ' Analysis"
-This project is a robust data engineering pipeline designed to collect and analyze customer feedback on the Korean translation of 「The Technological Republic」 by Alex Karp (CEO of Palantir). Moving beyond simple web scraping, this project demonstrates advanced techniques in bypassing web security, verifying data integrity, and vertical system integration.
+"Quantifying Translation Quality: An End-to-End Pipeline for 'The Techno-Republic' Analysis"
+This project is a robust data engineering pipeline designed to collect and analyze customer feedback on the Korean translation of The Techno-Republic by Alex Karp (CEO of Palantir). Moving beyond simple web scraping, this project demonstrates advanced techniques in bypassing web security, verifying data integrity, and vertical system integration.
 
 📌 Key Features
 Hybrid Selenium-Request Engine: Bypasses Web Application Firewalls (WAF) by capturing session cookies via Selenium and transitioning to high-speed data collection.
@@ -19,5 +19,4 @@ Core Libraries: Selenium, BeautifulSoup4, Pandas, Openpyxl
 DevOps: Webdriver-manager for automated driver configuration
 
 🔍 Engineering Challenge: The Quest for Data Integrity
-
 One of the most significant challenges was resolving a 3-review discrepancy in the dataset. By implementing a Real-Sort UI Simulator that forced a "Sort by Latest" action via radio button triggers, I verified that the missing data was not a script error but a platform-side "Soft Delete" issue. This obsessive attention to detail is the core of my data philosophy.
