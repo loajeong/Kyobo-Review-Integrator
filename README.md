@@ -1,22 +1,45 @@
-🚀 Kyobo Review Integrator: A Palantir-Inspired Data Pipeline
-"Quantifying Translation Quality: An End-to-End Pipeline for 'The Techno-Republic' Analysis"
-This project is a robust data engineering pipeline designed to collect and analyze customer feedback on the Korean translation of The Techno-Republic by Alex Karp (CEO of Palantir). Moving beyond simple web scraping, this project demonstrates advanced techniques in bypassing web security, verifying data integrity, and vertical system integration.
+# 🚀 Kyobo Review Integrator: A Palantir-Inspired Data Pipeline
+> **"Quantifying Translation Quality: An End-to-End Pipeline for 'The Technological Republic-Hard Power, Soft Belief, and the Future of the West ' Analysis"**
 
-📌 Key Features
-Hybrid Selenium-Request Engine: Bypasses Web Application Firewalls (WAF) by capturing session cookies via Selenium and transitioning to high-speed data collection.
+This project is a high-performance data engineering pipeline designed to collect and analyze customer feedback for the Korean translation of **'The Technological Republic'** by Alex Karp (CEO of Palantir). Moving beyond basic web scraping, this system demonstrates advanced capabilities in bypassing web security, ensuring data integrity, and achieving seamless vertical integration.
 
-Forensic Audit System: A specialized module that proved a discrepancy between the platform's claimed count (58) and actual rendered reviews (55) was due to "Ghost Data" (unsynchronized server-side deletions), ensuring 100% data reliability.
+## 🛠 Tech Stack
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Selenium](https://img.shields.io/badge/-Selenium-%2343B02A?style=for-the-badge&logo=Selenium&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4.12.2-blue?style=for-the-badge)
 
-Vertical Integration: Consolidates separate stages—Scout (HTML analysis), Scrape (collection), Audit (verification), and Report (Excel generation)—into a single, high-efficiency PalantirIntegrator class.
+---
 
-Automated Insights: Integration with openpyxl to automatically highlight critical keywords (e.g., "translation," "literal translation") in exported Excel reports for immediate sentiment analysis.
+## 📌 Key Features
 
-🛠 Tech Stack
-Language: Python
+* **Hybrid Selenium-Request Engine**: 
+    * Optimized performance by capturing session cookies via Selenium to bypass **Web Application Firewalls (WAF)**, then transitioning to high-speed data collection using the Requests library.
+* **Forensic Audit System (Data Reliability)**: 
+    * Identified and resolved a discrepancy between the platform's claimed count (58) and actual rendered reviews (55). Proven to be "Ghost Data" caused by unsynchronized server-side deletions, ensuring **100% data integrity**.
+* **Vertical System Integration**: 
+    * Consolidated the entire workflow—**Scout** (HTML analysis), **Scrape** (collection), **Audit** (verification), and **Report** (Excel generation)—into a single, high-efficiency `PalantirIntegrator` class.
+* **Automated Insights**: 
+    * Integrated with `openpyxl` to automatically highlight critical keywords (e.g., "translation," "literal translation") in exported reports, facilitating immediate sentiment analysis for stakeholders.
 
-Core Libraries: Selenium, BeautifulSoup4, Pandas, Openpyxl
+---
 
-DevOps: Webdriver-manager for automated driver configuration
+## 🔍 Engineering Challenge: The Quest for Data Integrity
 
-🔍 Engineering Challenge: The Quest for Data Integrity
-One of the most significant challenges was resolving a 3-review discrepancy in the dataset. By implementing a Real-Sort UI Simulator that forced a "Sort by Latest" action via radio button triggers, I verified that the missing data was not a script error but a platform-side "Soft Delete" issue. This obsessive attention to detail is the core of my data philosophy.
+> **"Uncompromising attention to data integrity is the core of my engineering philosophy."**
+
+The most significant challenge in this project was resolving a 3-review discrepancy in the dataset.
+
+1.  **The Problem**: The source website displayed a total of 58 reviews, but only 55 were accessible via standard scraping.
+2.  **The Solution**: Developed a **Real-Sort UI Simulator** that forced a "Sort by Latest" action through radio button triggers, mimicking human interaction to reveal hidden DOM elements.
+3.  **The Result**: Verified that the missing data was not a script error but a platform-side **"Soft Delete"** issue (data remaining on the server but hidden from the UI).
+
+This rigorous verification process demonstrates my capability to handle data anomalies and deliver reliable, audit-ready datasets in a professional environment.
+
+---
+
+## 📂 Project Structure
+* **Scout**: Advanced parsing and HTML structure analysis.
+* **Scrape**: Multi-layered data extraction logic.
+* **Audit**: Forensic verification of data quantity and quality.
+* **Report**: Automated visualization and keyword-based reporting.
