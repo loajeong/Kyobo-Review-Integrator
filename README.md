@@ -70,10 +70,13 @@ Kyobo-Review-Integrator/
 
 ---
 
+
+
 ## ✉️ Contact
 * **Author:** Seoyeon Jeong
 * **LinkedIn:** [https://www.linkedin.com/in/im-seoyeon-jeong/]
 * **Email:** [syn.eoeo@gmail.com]
+
 
 
 
