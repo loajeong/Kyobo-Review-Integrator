@@ -60,8 +60,8 @@ def audit_kyobo_reviews_final(book_id):
                 print(f"\n📘 [Ledger] Review count found in the tab menu: {claimed_count}")
 
         except Exception as e:
-            print(f"\n📘 [Ledger] Could not read the total count. (Assuming default value of 59)")
-            claimed_count = 59 # The number verified by the user
+            print(f"\n📘 [Ledger] Could not read the total count. (Assuming default value of 58)")
+            claimed_count = 58 # The number verified by the user
 
         # ==========================================================
         # [Fix 2] Physical check: Using verified .comment_item
@@ -142,4 +142,5 @@ def audit_kyobo_reviews_final(book_id):
 
 # Execution
 target_book_id = "S000217251615"
+
 audit_kyobo_reviews_final(target_book_id)
