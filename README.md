@@ -69,6 +69,11 @@ Kyobo-Review-Integrator/
 └── asset/                 # Screenshots of highlighted results
 ```
 
+---
+
+## ⚖️ Ethics & Disclaimer
+This project was developed for **educational and research purposes** only. To respect the source platform's resources, the system implements **rate-limiting (time delays)** and focuses on a "Surgical Strike" approach rather than high-load mass crawling. All collected data is handled with privacy in mind and is not used for any commercial gain.
+
 
 ---
 
@@ -76,6 +81,7 @@ Kyobo-Review-Integrator/
 * **Author:** Seoyeon Jeong
 * **LinkedIn:** [https://www.linkedin.com/in/im-seoyeon-jeong/]
 * **Email:** [syn.eoeo@gmail.com]
+
 
 
 
