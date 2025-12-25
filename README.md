@@ -1,7 +1,14 @@
-# 🚀 Kyobo Review Integrator: A Palantir-Inspired Data Pipeline
-> **"Quantifying Translation Quality: An End-to-End Pipeline for 'The Technological Republic-Hard Power, Soft Belief, and the Future of the West ' Analysis"**
+# 🚀 Kyobo Review Integrator: A Universal Data Pipeline
+> **"High-Fidelity Data Extraction & Forensic Audit Engine: Tested on 'The Technological Republic'"**
 
-This project is a high-performance data engineering pipeline designed to collect and analyze customer feedback for the Korean translation of **'The Technological Republic'** by Alex Karp (CEO of Palantir). Moving beyond basic web scraping, this system demonstrates advanced capabilities in bypassing web security, ensuring data integrity, and achieving seamless vertical integration.
+This project is a high-performance data engineering pipeline designed for the reliable collection and analysis of customer feedback from major bookstores. 
+
+### 🎯 Strategic Source Selection: Why Kyobo Bookstore?
+**Kyobo Bookstore** was strategically selected as the primary data source because it holds the **largest market share** in the South Korean book industry. This market dominance ensures an **overwhelmingly higher volume and density of review data** compared to any other platform. By targeting the industry leader, this pipeline secures a statistically significant and comprehensive dataset, providing the deepest possible insights into reader sentiment and translation quality.
+
+While this version is showcased using **Alex Karp's 'The Technological Republic'**, the architecture is built as a **universal engine** capable of processing any target book with uncompromising data precision.
+
+---
 
 ## 🛠 Tech Stack
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -13,14 +20,16 @@ This project is a high-performance data engineering pipeline designed to collect
 
 ## 📌 Key Features
 
+* **Universal & Extensible Architecture**: 
+    * Engineered with a modular class-based structure (`UniversalReviewIntegrator`), allowing the system to adapt to various book IDs and categories beyond a single use case.
 * **Hybrid Selenium-Request Engine**: 
-    * Optimized performance by capturing session cookies via Selenium to bypass **Web Application Firewalls (WAF)**, then transitioning to high-speed data collection using the Requests library.
+    * Optimized performance by capturing session cookies via Selenium to bypass **Web Application Firewalls (WAF)**, ensuring stable access to protected data layers.
 * **Forensic Audit System (Data Reliability)**: 
-    * Identified and resolved a discrepancy between the platform's claimed count (58) and actual rendered reviews (55). Proven to be "Ghost Data" caused by unsynchronized server-side deletions, ensuring **100% data integrity**.
+    * A specialized module that identifies and resolves discrepancies between claimed counts and actual rendered data. In this project, it successfully proved "Ghost Data" issues, ensuring **100% data integrity**.
 * **Vertical System Integration**: 
-    * Consolidated the entire workflow—**Scout** (HTML analysis), **Scrape** (collection), **Audit** (verification), and **Report** (Excel generation)—into a single, high-efficiency `PalantirIntegrator` class.
+    * Consolidated the entire workflow—**Scout** (HTML analysis), **Scrape** (collection), **Audit** (verification), and **Report** (Excel generation)—into a single, high-efficiency pipeline.
 * **Automated Insights**: 
-    * Integrated with `openpyxl` to automatically highlight critical keywords (e.g., "translation," "literal translation") in exported reports, facilitating immediate sentiment analysis for stakeholders.
+    * Utilizes `openpyxl` to automatically highlight critical keywords (e.g., "translation," "readability") in exported reports for immediate sentiment analysis.
 
 ---
 
@@ -28,26 +37,41 @@ This project is a high-performance data engineering pipeline designed to collect
 
 > **"Uncompromising attention to data integrity is the core of my engineering philosophy."**
 
-The most significant challenge in this project was resolving a 3-review discrepancy in the dataset.
+The defining challenge of this project was resolving a 3-review discrepancy found during the audit phase.
 
-1.  **The Problem**: The source website displayed a total of 58 reviews, but only 55 were accessible via standard scraping.
-2.  **The Solution**: Developed a **Real-Sort UI Simulator** that forced a "Sort by Latest" action through radio button triggers, mimicking human interaction to reveal hidden DOM elements.
-3.  **The Result**: Verified that the missing data was not a script error but a platform-side **"Soft Delete"** issue (data remaining on the server but hidden from the UI).
+1.  **The Problem**: The source website claimed 58 reviews, but only 55 were accessible via standard rendering.
+2.  **The Solution**: Developed a **Real-Sort UI Simulator** that forced a "Sort by Latest" action through radio button triggers, bypassing UI glitches to reveal hidden DOM elements.
+3.  **The Result**: Verified that the missing data was a platform-side **"Soft Delete"** issue (unsynchronized server-side deletions), confirming that the pipeline had captured every single *valid* review.
 
-This rigorous verification process demonstrates my capability to handle data anomalies and deliver reliable, audit-ready datasets in a professional environment.
+---
+
+## 🏗 Technical Note: Scalability & Honesty
+
+While the current implementation focuses on high-fidelity extraction for a single target ID per execution to ensure maximum precision, the underlying architecture is designed to be **extensible**. 
+
+* **Future Roadmap**: The system is prepared for future iterations including batch processing for multiple IDs and parallel multi-source integration. 
+* **Design Philosophy**: I chose a "Surgical Strike" approach over "Mass Scraping" to prioritize data quality and audit-readiness—essential traits for any enterprise-grade data pipeline.
 
 ---
 
 ## 📂 Project Structure
-* **Scout**: Advanced parsing and HTML structure analysis.
-* **Scrape**: Multi-layered data extraction logic.
-* **Audit**: Forensic verification of data quantity and quality.
-* **Report**: Automated visualization and keyword-based reporting.
 
+```text
+Kyobo-Review-Integrator/
+├── main.py                 # Final Integrated Universal Integrator Class
+├── requirements.txt        # List of dependencies
+├── README.md               # Professional documentation
+├── scripts/                # Legacy scripts showing the evolution of the pipeline
+│   ├── v1_prototype.py     # Initial connection attempt
+│   ├── v5_highlighter.py   # Visualization module
+│   └── v7_forensic_audit.py# Final integrity verification logic
+├── data/                   # Sample output reports (Excel)
+└── assets/                 # Screenshots of highlighted results
 ---
 
 ## ✉️ Contact
 * **Author:** Seoyeon Jeong
 * **LinkedIn:** [https://www.linkedin.com/in/im-seoyeon-jeong/]
 * **Email:** [syn.eoeo@gmail.com]
+
 
