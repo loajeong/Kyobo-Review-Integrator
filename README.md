@@ -66,7 +66,7 @@ Kyobo-Review-Integrator/
 │   ├── v5_highlighter.py   # Visualization module
 │   └── v7_forensic_audit.py# Final integrity verification logic
 ├── output/                   # Sample output reports (Excel)
-└── assets/                 # Screenshots of highlighted results
+└── asset/                 # Screenshots of highlighted results
 ```
 
 
@@ -76,6 +76,7 @@ Kyobo-Review-Integrator/
 * **Author:** Seoyeon Jeong
 * **LinkedIn:** [https://www.linkedin.com/in/im-seoyeon-jeong/]
 * **Email:** [syn.eoeo@gmail.com]
+
 
 
 
