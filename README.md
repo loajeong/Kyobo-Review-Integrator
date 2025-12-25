@@ -69,11 +69,13 @@ Kyobo-Review-Integrator/
 └── assets/                 # Screenshots of highlighted results
 ```
 
+
 ---
 
 ## ✉️ Contact
 * **Author:** Seoyeon Jeong
 * **LinkedIn:** [https://www.linkedin.com/in/im-seoyeon-jeong/]
 * **Email:** [syn.eoeo@gmail.com]
+
 
 
