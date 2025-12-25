@@ -1,0 +1,6 @@
+· pandas 
+· requests 
+· selenium
+· beautifulsoup4
+· openpyxl
+· webdriver-manager
